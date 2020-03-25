@@ -27,6 +27,34 @@ $(document).ready(function() {
     $("#output").text(result);
     //alert(add(number1, number2));
   });
+
+  $("form#sub").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#sub1").val());
+    var number2 = parseInt($("#sub2").val());
+    var result = sub(number1, number2);
+    $("#output").text(result);
+    //alert(add(number1, number2));
+  });
+
+  $("form#dev").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#dev1").val());
+    var number2 = parseInt($("#dev2").val());
+    var result = dev(number1, number2);
+    $("#output").text(result);
+    //alert(add(number1, number2));
+  });
+
+  $("form#mult").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#mult1").val());
+    var number2 = parseInt($("#mult2").val());
+    var result = mult(number1, number2);
+    $("#output").text(result);
+    //alert(add(number1, number2));
+  });
+
 });
 
 //alert(add(number1, number2));
